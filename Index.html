@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Image</title>
+  <meta charset="UTF-8">
+</head>
+
+<body style="text-align:center;">
+
+<h2>Your Random Image</h2>
+
+<img id="randomImage" src="" style="max-width:90%; height:auto;" />
+
+<script>
+  const images = [
+    "Image1.png",
+    "Image2.png",
+    "Image3.png",
+    "Image4.png"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * images.length);
+  document.getElementById("randomImage").src = images[randomIndex];
+</script>
+
+</body>
+</html>
